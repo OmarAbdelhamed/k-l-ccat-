@@ -1,0 +1,115 @@
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: #333333;
+
+  &__span {
+    font-size: 40px;
+    font-family: 'ALGER', sans-serif ;
+  }
+
+  &__container {
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__logo {
+    font-family: 'Paytone One', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(243, 243, 243);
+    font-size: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--first-color-social);
+    }
+
+    &-icon {
+      font-size: 1.15rem;
+      color: var(--first-color);
+    }
+  }
+
+  &__subscribe {
+    background-color: var(--first-color-lighten);
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+  }
+  &__input {
+    width: 70%;
+    padding: 0 0.5rem;
+    background: none;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+  }
+  &__button {
+    padding: 1rem;
+  }
+  &__data {
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    row-gap: 0.75rem;
+  }
+  &__information {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  &__social {
+    display: inline-flex;
+    column-gap: 0.75rem;
+
+    &-link {
+      font-size: 3rem;
+      color: rgb(237, 237, 237);
+    }
+  }
+  &__cards {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  &__copy {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 60px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+  }
+  &__copydiv {
+    &:before {
+      content: '';
+      display: block;
+      border-top: 2px solid rgb(86, 86, 86); /* Adjust the color, thickness, and style as needed */
+      margin-bottom: 30px;
+      margin-top: 100px;
+    }
+  }
+  &__content1 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__mail {
+    color: var(--first-color-social);
+  }
+}
+
+.section__footer {
+  padding: 2.5rem 0 1rem;
+}

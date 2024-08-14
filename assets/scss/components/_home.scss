@@ -1,0 +1,84 @@
+/*=============== HOME ===============*/
+
+@mixin background($imgpath,$height, $position: center, $repeat: no-repeat) {
+  background: {
+    image: linear-gradient(
+        to top,
+        var(--background-hue-first),
+        var(--background-hue-first)
+      ),
+      url($imgpath);
+    position: $position;
+    repeat: $repeat;
+    size: cover;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  height: $height;
+  width: 50%;  
+  @media (max-width: 800px) {
+    background: {
+      attachment: scroll;
+      width: 100%;  
+    }
+  }
+}
+
+.home-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  
+  height: 40rem;
+  @include background('/assets/img/catr.jpg', height);
+  display: flex ;
+  justify-content: center;
+
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -30px 200px 0px 200px;
+    padding: 0px 0 0 0;
+    max-width: 1150px;
+  }
+  &__title {
+    text-align: left;
+    color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 47px;
+    margin-bottom: 20px;
+  }
+  &__description {
+    text-align: left;
+    color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+  }
+  &__button {
+    width: 140px;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    background-color: var(--first-color-social);
+    color: white;
+    border-radius: 4px;
+    height: 34px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #282828;
+    }
+  }
+}
