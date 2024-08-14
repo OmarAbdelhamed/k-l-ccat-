@@ -294,7 +294,7 @@ img {
   background--moz-background-size: cover;
   background--o-background-size: cover;
   height: height;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
