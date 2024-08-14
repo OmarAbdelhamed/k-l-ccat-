@@ -17,7 +17,7 @@
     -o-background-size: cover;
   }
   height: $height;
-  width: 50%;  
+  width: 100%;  
   @media (max-width: 800px) {
     background: {
       attachment: scroll;
